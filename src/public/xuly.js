@@ -1,5 +1,6 @@
-var socket = io("http://localhost:5000");
+//var socket = io("http://localhost:5000");
 //var socket = io("https://tien-len.herokuapp.com");
+var socket = io("https://tlsv.lumigame.com");
 var timer = 0;
 socket.on("error", function () {
   alert("Lỗi kết nối máy chủ");
