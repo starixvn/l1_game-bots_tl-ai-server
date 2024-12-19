@@ -9,8 +9,8 @@ COPY package.json yarn.lock ./
 RUN yarn install --production
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY ./src/ .
+COPY . .
 
 USER node
 
-CMD [ "node", "./index.js" ]
+CMD [ "yarn", "run", "start" ]
